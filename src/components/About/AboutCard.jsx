@@ -1,6 +1,8 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
-import { ImPointRight } from "react-icons/im";
+import { MdSportsCricket } from "react-icons/md";
+import { GrInternetExplorer } from "react-icons/gr";
+import { IoIosBicycle } from "react-icons/io";
 
 function AboutCard() {
   return (
@@ -18,13 +20,13 @@ function AboutCard() {
           </p>
           <ul>
             <li className="about-activity">
-              <ImPointRight /> Playing Cricket
+              <MdSportsCricket color="#c95bf5" size="25px" /> Playing Cricket
             </li>
             <li className="about-activity">
-              <ImPointRight /> Surfing On Internet
+              <GrInternetExplorer color="#c95bf5" size="25px" /> Surfing On Internet
             </li>
             <li className="about-activity">
-              <ImPointRight /> Cultural Enthu
+              <IoIosBicycle color="#c95bf5" size="25px" /> Cycling
             </li>
           </ul>
 

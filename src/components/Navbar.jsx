@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
-import logo from "../Assets/my-logo.gif";
+import logo from "../assets/my-logo.gif"
 import Button from "react-bootstrap/Button";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";  
 import { CgGitFork } from "react-icons/cg";
 import { ImBlog } from "react-icons/im";
 import {
@@ -13,7 +13,6 @@ import {
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
 } from "react-icons/ai";
-
 import { CgFileDocument } from "react-icons/cg";
 
 function NavBar() {
@@ -39,7 +38,7 @@ function NavBar() {
     >
       <Container>
         <Navbar.Brand href="/" className="d-flex">
-          <img src={logo} style={{width: "50px", height: "50px"}} className="img-fluid logo" alt="brand" />
+          <img src={logo} className="my-logo img-fluid logo" alt="brand" />
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
@@ -54,42 +53,49 @@ function NavBar() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto" defaultActiveKey="#home">
             <Nav.Item>
-              <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
+              <NavLink
+                to="/"
+                className="nav-link"  
+                activeClassName="active"  
+                exact 
+                onClick={() => updateExpanded(false)}
+              >
                 <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
-              </Nav.Link>
+              </NavLink>
             </Nav.Item>
 
             <Nav.Item>
-              <Nav.Link
-                as={Link}
+              <NavLink
                 to="/about"
+                className="nav-link"  
+                activeClassName="active"  
                 onClick={() => updateExpanded(false)}
               >
                 <AiOutlineUser style={{ marginBottom: "2px" }} /> About
-              </Nav.Link>
+              </NavLink>
             </Nav.Item>
 
             <Nav.Item>
-              <Nav.Link
-                as={Link}
+              <NavLink
                 to="/contact"
+                className="nav-link"  
+                activeClassName="active"  
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineFundProjectionScreen
-                  style={{ marginBottom: "2px" }}
-                />{" "}
+                <AiOutlineFundProjectionScreen style={{ marginBottom: "2px" }} />
                 Contact
-              </Nav.Link>
+              </NavLink>
             </Nav.Item>
 
             <Nav.Item>
-              <Nav.Link
-                as={Link}
+              <NavLink
                 to="/resume"
+                className="nav-link"  
+                activeClassName="active"  
                 onClick={() => updateExpanded(false)}
               >
                 <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
-              </Nav.Link>
+              </NavLink>
             </Nav.Item>
           </Nav>
         </Navbar.Collapse>

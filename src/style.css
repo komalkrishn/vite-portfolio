@@ -169,6 +169,11 @@ button:focus {
   padding: 0.8rem 1rem !important;
 }
 
+.nav-link.active {
+  color:#c95bf5 !important;  
+  font-weight: bold;  
+}
+
 @media (max-width: 767px) {
   .nav-link {
     padding: 0.7rem 1rem !important;
@@ -904,4 +909,9 @@ button:focus {
 
 .section.hide {
   display: none;
+}
+
+.my-logo {
+  width: 80px !important;
+  height: 80px !important;
 }
