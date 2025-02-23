@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
-import Home from "./components/Home/Home";
-import Preloader from "../src/components/Preloader";
 import {
   BrowserRouter as Router,
   Route,
   Routes
 } from "react-router-dom";
+import Home from "./components/Home/Home";
+import Preloader from "../src/components/Preloader";
 import Footer from "./components/Footer";
 import NavBar from "./components/Navbar";
 import About from "./components/About/About";
