@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Row, Col } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import Particle from "../Particle";
 
 const Contact = () => {
@@ -17,23 +17,23 @@ const Contact = () => {
                         <div className="row">
                             <div className="w-50">
                                 <div className="input-group outer-shadow hover-in-shadow">
-                                    <input type="text" name="Name" placeholder="Your Name" class="input-control" required />
+                                    <input type="text" name="Name" placeholder="Your Name" className="input-control" required />
                                 </div>
                                 <div className="input-group outer-shadow hover-in-shadow">
-                                    <input type="text" name="Email" placeholder="Email id" class="input-control" required />
+                                    <input type="text" name="Email" placeholder="Email id" className="input-control" required />
                                 </div>
                                 <div className="input-group outer-shadow hover-in-shadow">
-                                    <input type="text" name="Subject" placeholder="subject" class="input-control" required />
+                                    <input type="text" name="Subject" placeholder="subject" className="input-control" required />
                                 </div>
                             </div>
-                            <div class="w-50">
-                                <div class="input-group outer-shadow hover-in-shadow">
+                            <div className="w-50">
+                                <div className="input-group outer-shadow hover-in-shadow">
                                     <textarea className="input-control txt" name="Message" placeholder="Message"></textarea>
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="submit-btn">
+                        <div className="row">
+                            <div className="submit-btn">
                                 <button type="submit" className="btn-1 outer-shadow hover-in-shadow">Send Message</button>
                             </div>
                         </div>

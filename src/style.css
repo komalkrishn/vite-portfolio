@@ -554,6 +554,7 @@ button:focus {
   color: white !important;
 }
 
+/* In your CSS file (e.g., App.css) */
 .tech-icons {
   font-size: 4.5em !important;
   margin: 15px !important;
@@ -567,12 +568,32 @@ button:focus {
   box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137) !important;
   overflow: hidden !important;
   transition: all 0.4s ease 0s !important;
+  position: relative; /* Required for positioning the title overlay */
 }
 
-@media (max-width: 767px) {
-  .tech-icons {
-    margin: 10px !important;
-  }
+.icon-container {
+  position: relative;
+  display: inline-block;
+}
+
+.icon-title {
+  position: absolute;
+  top: 10%; /* Position the title below the icon */
+  left: 50%;
+  transform: translateX(-50%) translateY(10px); /* Center horizontally and move down slightly */
+  background-color: rgba(197, 115, 230, 0.883); /* Background color for the title */
+  color: white; /* Text color */
+  padding: 3px 8px; /* Smaller padding */
+  border-radius: 5px;
+  font-size: 0.4em; /* Smaller font size */
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.tech-icons:hover .icon-title {
+  opacity: 1; /* Show the title on hover */
+  transform: translateX(-50%) translateY(15px); /* Move down slightly more on hover */
 }
 
 .tech-icons:hover {
@@ -580,9 +601,11 @@ button:focus {
   overflow: hidden !important;
   border: 2.2px solid rgba(197, 115, 230, 0.883) !important;
 }
-.tech-icon-images {
-  padding: 20px !important;
-  line-height: 1.6 !important;
+
+@media (max-width: 767px) {
+  .tech-icons {
+    margin: 10px !important;
+  }
 }
 
 .quote-card-view {
@@ -914,4 +937,16 @@ button:focus {
 .my-logo {
   width: 80px !important;
   height: 80px !important;
+}
+
+/* In your CSS file (e.g., App.css) */
+.tooltip-inner {
+  background-color: rgba(197, 115, 230, 0.883) !important; /* Tooltip background color */
+  color: white !important; /* Tooltip text color */
+  border-radius: 5px !important; /* Rounded corners */
+  padding: 5px 10px !important; /* Padding */
+}
+
+.arrow::before {
+  border-top-color: rgba(197, 115, 230, 0.883) !important; /* Tooltip arrow color */
 }

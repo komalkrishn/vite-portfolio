@@ -4,8 +4,7 @@ import Preloader from "../src/components/Preloader";
 import {
   BrowserRouter as Router,
   Route,
-  Routes,
-  Navigate
+  Routes
 } from "react-router-dom";
 import "./App.css";
 import "./style.css";

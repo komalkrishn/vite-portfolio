@@ -3,17 +3,12 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import logo from "../assets/my-logo.gif"
-import Button from "react-bootstrap/Button";
 import { NavLink } from "react-router-dom";  
-import { CgGitFork } from "react-icons/cg";
-import { ImBlog } from "react-icons/im";
 import {
-  AiFillStar,
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
 } from "react-icons/ai";
-import { CgFileDocument } from "react-icons/cg";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -55,8 +50,7 @@ function NavBar() {
             <Nav.Item>
               <NavLink
                 to="/"
-                className="nav-link"  
-                activeClassName="active"  
+                className="nav-link" 
                 exact 
                 onClick={() => updateExpanded(false)}
               >
@@ -67,8 +61,7 @@ function NavBar() {
             <Nav.Item>
               <NavLink
                 to="/about"
-                className="nav-link"  
-                activeClassName="active"  
+                className="nav-link" 
                 onClick={() => updateExpanded(false)}
               >
                 <AiOutlineUser style={{ marginBottom: "2px" }} /> About
@@ -78,23 +71,11 @@ function NavBar() {
             <Nav.Item>
               <NavLink
                 to="/contact"
-                className="nav-link"  
-                activeClassName="active"  
+                className="nav-link" 
                 onClick={() => updateExpanded(false)}
               >
                 <AiOutlineFundProjectionScreen style={{ marginBottom: "2px" }} />
                 Contact
-              </NavLink>
-            </Nav.Item>
-
-            <Nav.Item>
-              <NavLink
-                to="/resume"
-                className="nav-link"  
-                activeClassName="active"  
-                onClick={() => updateExpanded(false)}
-              >
-                <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
               </NavLink>
             </Nav.Item>
           </Nav>

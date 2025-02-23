@@ -1,29 +1,31 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
 import {
-  SiLinux,
   SiVisualstudiocode,
   SiGithub,
-  SiHeroku,
-  SiAndroidstudio,
+  SiNetlify,
+  SiFigma ,
 } from "react-icons/si";
 
 function Toolstack() {
+  // Define the toolstack with titles
+  const toolStack = [
+    { icon: <SiVisualstudiocode />, name: "VS Code" },
+    { icon: <SiGithub />, name: "GitHub" },
+    { icon: <SiFigma  />, name: "Figma " },
+    { icon: <SiNetlify />, name: "Netlify" },
+  ];
+
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-     
-      <Col xs={4} md={2} className="tech-icons">
-        <SiVisualstudiocode />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-      <SiGithub />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-      <SiAndroidstudio />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiHeroku />
-      </Col>
+      {toolStack.map((tool, index) => (
+        <Col key={index} xs={4} md={2} className="tech-icons">
+          <div className="icon-container">
+            {tool.icon}
+            <div className="icon-title">{tool.name}</div>
+          </div>
+        </Col>
+      ))}
     </Row>
   );
 }
