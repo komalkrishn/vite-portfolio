@@ -9,7 +9,7 @@ import {
 import Footer from "./components/Footer";
 import NavBar from "./components/Navbar";
 import About from "./components/About/About";
-import Contact from "./components/contact/Contact";
+import Contact from "./components/Contact/Contact";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import "./style.css";
