@@ -49,6 +49,7 @@ function AboutCard() {
               Learn something new everyday—no matter how small or big. By the end
               of the day, that little progress will fill you with confidence,
               making tomorrow brighter and more joyful.
+              <span className="author"> --KOMAL KRISHNA</span>
             </p>
           </div>
 
