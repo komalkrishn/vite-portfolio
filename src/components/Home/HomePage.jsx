@@ -12,19 +12,19 @@ function HomeIntro() {
         <Row>
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }}>
-              LET ME <span className="purple"> INTRODUCE </span> MYSELF
+              LET ME SHARE <span className="purple">MY STORY </span>
             </h1>
             <p className="home-about-body">
               Programming has been a journey of learning and growth.… 🤷‍♂️
               <br />
-              <br />I am good at classics like&nbsp;
+              <br />I am good at classics like{" "}
               <i>
                 <b className="purple">
                   HTML, CSS, Javascript, ReactJS and NodeJS{" "}
                 </b>
               </i>
               <br />
-              <br />I focus on building practical &nbsp;
+              <br />I focus on building practical {" "}
               <i>
                 <b className="purple">Web Technologies and Products </b>
                 <b className="purple">
@@ -34,11 +34,11 @@ function HomeIntro() {
               </i>
               <br />
               <br />I harness the power of <b className="purple">Node.js</b> and
-              cutting-edge &nbsp;
+              cutting-edge {" "}
               <i>
                 <b className="purple">JavaScript frameworks like React.js</b>
-                &nbsp; to craft impactful and seamless solutions
               </i>
+              {" "} to craft impactful and seamless solutions
             </p>
           </Col>
           <Col md={4} className="myAvtar">

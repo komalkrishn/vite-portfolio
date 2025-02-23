@@ -19,7 +19,7 @@ function Home() {
               </h1>
 
               <h1 className="heading-name">
-                I'M
+                I'M{' '}
                 <strong className="main-name">
                   Komal krishna, a Full Stack Developer with 8+ years of
                   experience turning ideas into powerful, user-friendly websites

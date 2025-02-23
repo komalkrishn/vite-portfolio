@@ -14,8 +14,8 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            <span className="purple">Bonjour</span>, I am
-            <span className="purple">Komal Krishna</span> from
+            <span className="purple">Bonjour</span>, I am{' '}
+            <span className="purple">Komal Krishna</span> from{' '}
             <span className="purple">Andhra Pradesh, India</span>. I pursued my
             Master’s degree in France, where I gained a global perspective and a
             love for continuous learning.
