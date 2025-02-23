@@ -6,13 +6,13 @@ import {
   Route,
   Routes
 } from "react-router-dom";
-import "./App.css";
-import "./style.css";
 import Footer from "./components/Footer";
 import NavBar from "./components/Navbar";
 import About from "./components/About/About";
-import "bootstrap/dist/css/bootstrap.min.css";
 import Contact from "./components/contact/Contact";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
+import "./style.css";
 
 function App() {
   const [load, upadateLoad] = useState(true);

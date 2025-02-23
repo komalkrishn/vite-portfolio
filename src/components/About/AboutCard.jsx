@@ -1,7 +1,11 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
-import { MdSportsCricket } from "react-icons/md";
-import { GrInternetExplorer } from "react-icons/gr";
+import {
+  MdSportsCricket,
+  MdTipsAndUpdates,
+  MdTravelExplore,
+} from "react-icons/md";
+import { IoTelescopeSharp } from "react-icons/io5";
 import { IoIosBicycle } from "react-icons/io";
 
 function AboutCard() {
@@ -10,29 +14,44 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-          <span className="purple">Bonjour</span>, I am <span className="purple">Komal krishna </span>
-            from <span className="purple"> Andhra pradesh, India.</span>
-            <br />I did my Masters from France
-            
-            <br />
-            <br />
-            Apart from coding, some other activities that I love to do!
+            <span className="purple">Bonjour</span>, I am
+            <span className="purple">Komal Krishna</span> from
+            <span className="purple">Andhra Pradesh, India</span>. I pursued my
+            Master’s degree in France, where I gained a global perspective and a
+            love for continuous learning.
+          </p>
+          <p style={{ textAlign: "justify", marginTop: "1rem" }}>
+            <strong>Life Beyond the Screen:</strong>
           </p>
           <ul>
             <li className="about-activity">
-              <MdSportsCricket color="#c95bf5" size="25px" /> Playing Cricket
+              <MdSportsCricket color="#c95bf5" size="25px" /> Cricket aficionado
             </li>
             <li className="about-activity">
-              <GrInternetExplorer color="#c95bf5" size="25px" /> Surfing On Internet
+              <MdTravelExplore color="#c95bf5" size="25px" /> Exploring diverse
+              cultures
             </li>
             <li className="about-activity">
-              <IoIosBicycle color="#c95bf5" size="25px" /> Cycling
+              <IoIosBicycle color="#c95bf5" size="25px" /> Cycling through
+              scenic routes
+            </li>
+            <li className="about-activity">
+              <IoTelescopeSharp color="#c95bf5" size="25px" /> Hooked on space
+              discoveries
             </li>
           </ul>
+          <div className="sticker-container">
+            <div className="sticker-header">
+              <MdTipsAndUpdates size="30px" color="green" />
+              <span className="white"> Here’s a thought I live by:</span>
+            </div>
+            <p className="sticker-text">
+              Learn something new everyday—no matter how small or big. By the end
+              of the day, that little progress will fill you with confidence,
+              making tomorrow brighter and more joyful.
+            </p>
+          </div>
 
-          <p style={{ color: "rgb(155 126 172)" }}>
-            "Strive to build things that make a difference!"{" "}
-          </p>
           <footer className="blockquote-footer"></footer>
         </blockquote>
       </Card.Body>

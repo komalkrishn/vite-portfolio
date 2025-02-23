@@ -7,10 +7,9 @@ const Contact = () => {
     <Container fluid className="contact-section">
          <Particle />
         <div md={7} className="contact-header">
-            <h1  className="heading-1">Get In Touch.</h1>
+            <h1 className="heading-1">Get In Touch.</h1>
             </div>
         <br />
-          
            <div className="row">
                 <div className="contact-form">
                     <form action="https://formspree.io/f/xayvdyky" method="post" target="_blank" id="con-form">

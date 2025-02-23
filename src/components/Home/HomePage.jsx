@@ -2,13 +2,10 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../assets/avatar.webp";
 import Tilt from "react-parallax-tilt";
-import {
-  AiFillGithub,
-  AiOutlineTwitter,
-} from "react-icons/ai";
+import { AiFillGithub, AiOutlineTwitter } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
-function Home2() {
+function HomeIntro() {
   return (
     <Container fluid className="home-about-section" id="about">
       <Container>
@@ -18,51 +15,47 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I fell in love with programming and I have at least learnt
-              something, I think… 🤷‍♂️
+              Programming has been a journey of learning and growth.… 🤷‍♂️
               <br />
-              <br />I am fluent in classics like&nbsp;
+              <br />I am good at classics like&nbsp;
               <i>
-                <b className="purple">HTML, CSS, Javascript, ReactJS and NodeJS </b>
-              </i>
-              <br />
-              <br />
-              My field of Interest's are building new &nbsp;
-              <i>
-                <b className="purple">Web Technologies and Products </b> and
-                also in areas related to{" "}
                 <b className="purple">
-                  Deep Learning and Natural Launguage Processing.
+                  HTML, CSS, Javascript, ReactJS and NodeJS{" "}
                 </b>
               </i>
               <br />
-              <br />
-              Whenever possible, I also apply my passion for developing products
-              with <b className="purple">Node.js</b> and
+              <br />I focus on building practical &nbsp;
               <i>
+                <b className="purple">Web Technologies and Products </b>
                 <b className="purple">
-                  {" "}
-                  Modern Javascript Library and Framework
+                  while exploring areas in Data Science like Generative AI, NLP,
+                  Machine Learning, and Power BI
                 </b>
               </i>
-              &nbsp; like
+              <br />
+              <br />I harness the power of <b className="purple">Node.js</b> and
+              cutting-edge &nbsp;
               <i>
-                <b className="purple"> React.js </b>
+                <b className="purple">JavaScript frameworks like React.js</b>
+                &nbsp; to craft impactful and seamless solutions
               </i>
             </p>
           </Col>
           <Col md={4} className="myAvtar">
             <Tilt>
-              <img src={myImg} className="img-fluid" alt="avatar" style={{ width: '200px', height: 'auto' }} />
+              <img
+                src={myImg}
+                className="img-fluid"
+                alt="avatar"
+                style={{ width: "200px", height: "auto" }}
+              />
             </Tilt>
           </Col>
         </Row>
         <Row>
           <Col md={12} className="home-about-social">
-            <h1>FIND ME ON</h1>
-            <p>
-              Feel free to <span className="purple">connect </span>with me
-            </p>
+            <h1>CATCH ME ON</h1>
+
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
@@ -94,7 +87,6 @@ function Home2() {
                   <FaLinkedinIn />
                 </a>
               </li>
-              
             </ul>
           </Col>
         </Row>
@@ -102,4 +94,4 @@ function Home2() {
     </Container>
   );
 }
-export default Home2;
+export default HomeIntro;

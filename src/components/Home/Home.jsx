@@ -1,18 +1,18 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import homeLogo from "../../assets/home-main.svg";
-import Home2 from "./HomePage";
+import HomeIntro from "./HomePage";
 import Type from "./Type";
+import homeLogo from "../../assets/home-main.svg";
 
 function Home() {
   return (
     <section>
       <Container fluid className="home-section" id="home">
-         <Container className="home-content">
+        <Container className="home-content">
           <Row>
             <Col md={7} className="home-header">
               <h1 style={{ paddingBottom: 15 }} className="heading">
-                Hi There!{" "}
+                Hi There!
                 <span className="wave" role="img" aria-labelledby="wave">
                   👋🏻
                 </span>
@@ -20,7 +20,11 @@ function Home() {
 
               <h1 className="heading-name">
                 I'M
-                <strong className="main-name"> Komal krishna</strong>
+                <strong className="main-name">
+                  Komal krishna, a Full Stack Developer with 8+ years of
+                  experience turning ideas into powerful, user-friendly websites
+                  and applications
+                </strong>
               </h1>
 
               <div style={{ padding: 50, textAlign: "left" }}>
@@ -39,7 +43,7 @@ function Home() {
           </Row>
         </Container>
       </Container>
-      <Home2 />
+      <HomeIntro />
     </section>
   );
 }

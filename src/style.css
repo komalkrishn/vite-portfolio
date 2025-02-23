@@ -170,8 +170,8 @@ button:focus {
 }
 
 .nav-link.active {
-  color:#c95bf5 !important;  
-  font-weight: bold;  
+  color: #c95bf5 !important;
+  font-weight: bold;
 }
 
 @media (max-width: 767px) {
@@ -581,7 +581,12 @@ button:focus {
   top: 10%; /* Position the title below the icon */
   left: 50%;
   transform: translateX(-50%) translateY(10px); /* Center horizontally and move down slightly */
-  background-color: rgba(197, 115, 230, 0.883); /* Background color for the title */
+  background-color: rgba(
+    197,
+    115,
+    230,
+    0.883
+  ); /* Background color for the title */
   color: white; /* Text color */
   padding: 3px 8px; /* Smaller padding */
   border-radius: 5px;
@@ -769,13 +774,11 @@ button:focus {
   display: none !important;
 }
 
-
 /* Contact---- */
 
 .contact-section {
   padding: 70px 0 70px;
   min-height: 90vh;
- 
 }
 
 .contact-section .contact-item {
@@ -783,7 +786,6 @@ button:focus {
   max-width: 33.33%;
   padding: 15px;
   display: flex;
-  
 }
 
 .contact-section .contact-item-inner {
@@ -791,7 +793,6 @@ button:focus {
   text-align: center;
   border-radius: 5px;
   width: 100%;
-  
 }
 
 .contact-section .contact-item-inner i {
@@ -810,7 +811,7 @@ button:focus {
 
 .contact-section .contact-item-inner p {
   font-size: 16px;
-  color:red;
+  color: red;
   line-height: 26px;
   margin: 0;
   word-break: break-word;
@@ -820,7 +821,6 @@ button:focus {
   flex: 0 0 100%;
   max-width: 100%;
   margin-top: 50px;
-  
 }
 
 .contact-section .w-50 {
@@ -838,7 +838,6 @@ button:focus {
 
 .contact-section .input-group::after {
   border-radius: 30px;
-  
 }
 
 .contact-section .input-group .input-control {
@@ -858,8 +857,6 @@ button:focus {
   height: 184px;
   padding-top: 15px;
   resize: none;
- 
-  
 }
 
 .contact-section .submit-btn {
@@ -869,11 +866,8 @@ button:focus {
   padding: 0 15px;
   border-radius: 30%;
   color: red;
-  
- 
 }
-.btn-1{
-
+.btn-1 {
   padding: 10px 25px;
   font-size: 16px;
   font-weight: 500;
@@ -886,18 +880,17 @@ button:focus {
 
   display: inline-block;
   /* border: none; */
-
 }
-.btn-1:hover{
+.btn-1:hover {
   color: whitesmoke;
 }
 
-.heading-1{
+.heading-1 {
   color: whitesmoke;
   margin-top: 10px;
 }
 /* ----------------------- */
-    .input-group  .outer-shadow {
+.input-group .outer-shadow {
   box-shadow: var(--outer-shadow);
 }
 
@@ -916,7 +909,7 @@ button:focus {
 }
 
 .input-group .hover-in-shadow:after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 0;
@@ -935,18 +928,70 @@ button:focus {
 }
 
 .my-logo {
-  width: 80px !important;
-  height: 80px !important;
+  width: 150px !important;
+  height: 100px !important;
 }
 
-/* In your CSS file (e.g., App.css) */
 .tooltip-inner {
-  background-color: rgba(197, 115, 230, 0.883) !important; /* Tooltip background color */
+  background-color: rgba(
+    197,
+    115,
+    230,
+    0.883
+  ) !important; /* Tooltip background color */
   color: white !important; /* Tooltip text color */
   border-radius: 5px !important; /* Rounded corners */
   padding: 5px 10px !important; /* Padding */
 }
 
 .arrow::before {
-  border-top-color: rgba(197, 115, 230, 0.883) !important; /* Tooltip arrow color */
+  border-top-color: rgba(
+    197,
+    115,
+    230,
+    0.883
+  ) !important; /* Tooltip arrow color */
+}
+
+.sticker-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: rgba(197, 115, 230, 0.883);
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  animation: float 3s ease-in-out infinite;
+  text-align: center;
+  max-width: 700px; /* Adjust width as needed */
+  margin: auto; /* Centering the container */
+}
+
+/* Sticker Header */
+.sticker-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+/* Sticker Text */
+.sticker-text {
+  color: white;
+  font-size: 1.1em;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Floating Animation */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
 }

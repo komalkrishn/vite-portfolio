@@ -1,10 +1,10 @@
 <h2 align="center">
   Portfolio Website  <br/>
-  Coming....
+  <a href="https://komal-dev-portfolio.netlify.app/" target="_blank">Komal-krishna</a>
 </h2>
 
 <div align="center">
-  <img alt="Demo" src="./img/Screenshot.png" />
+  <img alt="Demo" src="./img/app-ss.png" />
 </div>
 
 <br/>

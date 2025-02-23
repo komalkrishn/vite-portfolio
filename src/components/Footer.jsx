@@ -1,9 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import {
-  AiFillGithub,
-  AiOutlineTwitter,
-} from "react-icons/ai";
+import { AiFillGithub, AiOutlineTwitter } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
 function Footer() {
@@ -13,10 +10,10 @@ function Footer() {
     <Container fluid className="footer">
       <Row>
         <Col md="4" className="footer-copywright">
-          <h3>Designed and Developed by Komal krishna</h3>
+          <h3>Crafted and Coded by Komal Krishna</h3>
         </Col>
         <Col md="4" className="footer-copywright">
-          <h3>Copyright © {year} KK</h3>
+          <h3>All Rights Reserved © {year} KK</h3>
         </Col>
         <Col md="4" className="footer-body">
           <ul className="footer-icons">
@@ -24,7 +21,7 @@ function Footer() {
               <a
                 href="https://github.com/komalkrishn"
                 style={{ color: "white" }}
-                target="_blank" 
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 <AiFillGithub />
@@ -34,7 +31,7 @@ function Footer() {
               <a
                 href="https://x.com/Komal11055700"
                 style={{ color: "white" }}
-                target="_blank" 
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 <AiOutlineTwitter />
@@ -44,7 +41,7 @@ function Footer() {
               <a
                 href="https://www.linkedin.com/in/komal-krishna-kavula/"
                 style={{ color: "white" }}
-                target="_blank" 
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 <FaLinkedinIn />
