@@ -397,6 +397,7 @@ button:focus {
   display: inline-block !important;
   padding-right: 15px;
   padding-left: 15px;
+  font-size: 1.3em;
 }
 
 .icon-colour {
@@ -1002,4 +1003,51 @@ button:focus {
   50% {
     transform: translateY(-10px);
   }
+}
+
+.success-message {
+  color: white; /* ✅ White text */
+  font-size: 1.2em;
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: rgba(0, 255, 0, 0.3); /* ✅ Light green background */
+  border-radius: 8px;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 1; /* ✅ Initially visible */
+}
+
+.hidden {
+  opacity: 0; /* ✅ Makes message fade out */
+}
+
+.tooltip-container {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.tooltip-text {
+  visibility: hidden;
+  font-size: 16px; 
+  font-weight: bold;
+  width: auto;
+  background-color: #cc4bff; 
+  color: white;
+  text-align: center;
+  padding: 8px 12px;
+  border-radius: 6px;
+  position: absolute;
+  bottom: 150%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  white-space: nowrap;
+  overflow-y: hidden;
+}
+
+.tooltip-container:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
 }

@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { AiFillGithub, AiOutlineTwitter } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import { SiGmail } from "react-icons/si";
 
 function Footer() {
   let date = new Date();
@@ -17,6 +18,11 @@ function Footer() {
         </Col>
         <Col md="4" className="footer-body">
           <ul className="footer-icons">
+            <li className="social-icons tooltip-container">
+              <SiGmail className="gmail-icon" color="white" />
+              <span className="tooltip-text">komala.kavula614@gmail.com</span>
+            </li>
+
             <li className="social-icons">
               <a
                 href="https://github.com/komalkrishn"
