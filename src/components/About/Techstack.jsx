@@ -13,8 +13,10 @@ import {
   DiSass,
 } from "react-icons/di";
 import {
-  SiBootstrap, SiCss3, SiJest, SiCypress, SiRedux,
+  SiBootstrap, SiCss3, SiJest, SiCypress, SiRedux, SiExpress
 } from "react-icons/si";
+import { FaFigma } from "react-icons/fa";
+import { GrGraphQl } from "react-icons/gr";
 
 function Techstack() {
   // Define the tech stack with titles
@@ -22,18 +24,21 @@ function Techstack() {
     { icon: <DiHtml5 />, name: "HTML5" },
     { icon: <SiCss3 />, name: "CSS3" },
     { icon: <DiSass />, name: "Sass" },
+    {icon: <FaFigma />, name: "Figma" },
+    { icon: <SiBootstrap />, name: "Bootstrap" },
     { icon: <DiJavascript1 />, name: "JavaScript" },
     { icon: <SiTypescript />, name: "TypeScript" },
     { icon: <DiReact />, name: "React" },
     { icon: <SiRedux />, name: "Redux" },
+    { icon: <TbBrandNextjs />, name: "Next.js" },
     { icon: <SiJest />, name: "Jest" },
     { icon: <SiTestinglibrary />, name: "RTL" },
     { icon: <SiCypress />, name: "Cypress" },
-    { icon: <SiBootstrap />, name: "Bootstrap" },
     { icon: <DiGit />, name: "Git" },
-    { icon: <TbBrandNextjs />, name: "Next.js" },
     { icon: <DiNodejs />, name: "Node.js" },
+    {icon: <SiExpress />, name: "Express.js"},
     { icon: <DiMongodb />, name: "MongoDB" },
+    {icon: <GrGraphQl />, name: "GraphQL"},
     { icon: <DiPython />, name: "Python" },
   ];
 

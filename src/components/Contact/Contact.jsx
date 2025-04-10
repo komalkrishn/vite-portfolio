@@ -41,10 +41,9 @@ const Contact = () => {
     <Container fluid className="contact-section">
       <Particle />
       <div className="contact-header">
-        <h1 className="heading-1">Get In Touch.</h1>
+        <h1 className="heading-1">Get In Touch</h1>
         <h3 style={{ color: "#cc4bff" }} className="heading-1">
-          Drop your message below and hit 'Send Message'—I'll receive it
-          directly in my Gmail inbox🥰!
+        Feel free to drop your message below and click 'Send Message'—I’ll receive it directly in my Gmail inbox. I'm open to discussing any new opportunities you may have in mind.
         </h3>
       </div>
       <br />

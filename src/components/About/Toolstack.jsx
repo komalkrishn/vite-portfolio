@@ -4,15 +4,19 @@ import {
   SiVisualstudiocode,
   SiGithub,
   SiNetlify,
-  SiFigma ,
 } from "react-icons/si";
+import { FaAws } from "react-icons/fa";
+import { VscAzure } from "react-icons/vsc";
+import { FaJenkins } from "react-icons/fa";
 
 function Toolstack() {
   // Define the toolstack with titles
   const toolStack = [
     { icon: <SiVisualstudiocode />, name: "VS Code" },
     { icon: <SiGithub />, name: "GitHub" },
-    { icon: <SiFigma  />, name: "Figma " },
+    { icon: <FaAws />, name: "AWS" },
+    { icon: <VscAzure />, name: "Azure" },
+    { icon: <FaJenkins />, name: "Jenkins" },
     { icon: <SiNetlify />, name: "Netlify" },
   ];
 
